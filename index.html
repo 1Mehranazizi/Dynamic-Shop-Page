@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    />
+    <title>Bootstrap</title>
+  </head>
+  <body class="bg-light">
+    <header class="pt-3 bg-white">
+      <div class="container">
+        <div class="row pb-3">
+          <div class="logo-brand col-6 col-lg-3">
+            <a href="#" class="navbar-brand">
+              <img src="./assets/img/logo.png" class="img-fluid" alt="logo" />
+            </a>
+          </div>
+          <div class="col-6 col-lg-6 d-flex justify-content-between serach-box">
+            <input type="search" class="form-control search-header" placeholder="Search..." />
+            <button class="btn search-btn">
+              <b class="bi bi-search"></b>
+            </button>
+          </div>
+          <div
+            class="col-12 mt-4 mt-lg-0 col-lg-3 d-flex header-btn align-items-center justify-content-between justify-content-lg-center">
+          <a href="#" class="py-2 text-white px-3 me-3"><b class="bi bi-person-fill me-1"></b>Sing In</a>
+          <a href="#" class="py-2 text-white px-3"><b class="bi bi-basket3-fill me-1"></b>Cart</a>
+          </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarmenu">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarmenu">
+            <ul class="navbar-nav navbar-menu justify-content-center align-items-center">
+              <li class="nav-item px-3 me-lg-4 mb-3 mb-lg-0"><a href="#" class="nav-link fw-bold">Home</a></li>
+              <li class="nav-item px-3 me-lg-4 mb-3 mb-lg-0"><a href="#" class="nav-link fw-bold">Shop</a></li>
+              <li class="nav-item px-3 me-lg-4 mb-3 mb-lg-0"><a href="#" class="nav-link fw-bold">Brand</a></li>
+              <li class="nav-item px-3 me-lg-4 mb-3 mb-lg-0"><a href="#" class="nav-link fw-bold">Blog</a></li>
+              <li class="nav-item px-3 me-lg-4 mb-3 mb-lg-0"><a href="#" class="nav-link fw-bold">Help</a></li>
+              <li class="nav-item px-3 me-lg-4 mb-3 mb-lg-0"><a href="#" class="nav-link fw-bold">About us</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="card border-0 notis-container"></div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="card border-0 breadcrumb-card my-4">
+        <div class="card-body d-flex align-items-center justify-content-between">
+          <div class="breadcrumb m-0 py-2">
+            <span class="breadcrumb-item">Digino</span>
+            <span class="breadcrumb-item">Shop</span>
+          </div>
+          <div class="breadcrumb-filter d-flex align-items-center">
+            <small class="d-inline-block me-2">Sort By :</small>
+            <a href="#" class="px-2 py-2 me-2 active">Most Visited</a>
+            <a href="#" class="px-2 py-2 me-2">Most Seller</a>
+            <a href="#" class="px-2 py-2 me-2">Most Viewed</a>
+          </div>
+        </div>
+      </div>
+      <div class="row my-4">
+        <aside class="col-12 col-lg-4 mb-4 mb-lg-0">
+          <div class="card border-0 filter-card bg-white">
+            <div class="card-header text-center border-0 bg-white">
+              <div class="header-tag__filter mt-2 border-bottom pb-2 d-flex justify-content-center align-items-center">
+                <span class="d-inline-block me-2 rounded-circle"><b class="bi bi-filter"></b></span>
+                <h4 class="m-0">Filter</h4>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="price-section mb-5">
+                <p class="mb-4">Price :</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="d-flex price-content align-items-center">
+                    <div class="d-flex align-items-center">
+                      <small class="form-price d-inline-block me-2 text-muted ">From :</small>
+                      <div class="input-group w-50">
+                        <div class="input-group-text pe-0 bg-light border-end-0 ">
+                          <small class="text-muted">$</small>
+                        </div>
+                        <input type="number" min="30" class="form-control from-price__input text-muted bg-light input-price ps-0 border-start-0" value="30">
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <small class="form-price d-inline-block me-2 text-muted">Up To :</small>
+                      <div class="input-group w-50">
+                        <div class="input-group-text pe-0 bg-light border-end-0">
+                          <small class="text-muted">$</small>
+                        </div>
+                        <input type="number" min="99" class="form-control up-price__input text-muted bg-light input-price ps-0 border-start-0" value="9999">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="brand-section mb-5">
+                <p class="mb-4">Brand :</p>
+                <div class="brands-name">
+                  <div class="d-flex mb-2 justify-content-between align-items-center">
+                    <div>
+                      <input type="checkbox" class="form-check-input brand-input" id="Apple">
+                      <label for="apple" class="text-muted">Apple</label>
+                    </div>
+                    <div>
+                      <img src="./assets/img/apple-logo.png" class="filter-icons" alt="apple">
+                    </div>
+                  </div>
+                  <div class="d-flex mb-2 justify-content-between align-items-center">
+                    <div>
+                      <input type="checkbox" class="form-check-input brand-input" id="Microsoft">
+                      <label for="Microsoft" class="text-muted">Microsoft</label>
+                    </div>
+                    <div>
+                      <img src="./assets/img/microsoft.png" class="filter-icons" alt="Microsoft">
+                    </div>
+                  </div>
+                  <div class="d-flex mb-2 justify-content-between align-items-center">
+                    <div>
+                      <input type="checkbox" class="form-check-input brand-input" id="Asus">
+                      <label for="Asus" class="text-muted">Asus</label>
+                    </div>
+                    <div>
+                      <img src="./assets/img/asus.png" class="filter-icons" alt="Asus">
+                    </div>
+                  </div>
+                  <div class="d-flex mb-2 justify-content-between align-items-center">
+                    <div>
+                      <input type="checkbox" class="form-check-input brand-input" id="Samsung">
+                      <label for="Samsung" class="text-muted">Samsung</label>
+                    </div>
+                    <div>
+                      <img src="./assets/img/samsung.png" class="filter-icons" alt="Sumsung">
+                    </div>
+                  </div>
+                  <div class="d-flex mb-2 justify-content-between align-items-center">
+                    <div>
+                      <input type="checkbox" class="form-check-input brand-input" id="Huawei">
+                      <label for="Huawei" class="text-muted">Huawei</label>
+                    </div>
+                    <div>
+                      <img src="./assets/img/huawei.png" class="filter-icons" alt="Huawei">
+                    </div>
+                  </div>
+                  <div class="d-flex mb-2 justify-content-between align-items-center">
+                    <div>
+                      <input type="checkbox" class="form-check-input brand-input" id="Xiaomi">
+                      <label for="Xiaomi" class="text-muted">Xiaomi</label>
+                    </div>
+                    <div>
+                      <img src="./assets/img/xiaomi.png" class="filter-icons" alt="Xiaomi">
+                    </div>
+                  </div>
+                  <div class="d-flex mb-2 justify-content-between align-items-center">
+                    <div>
+                      <input type="checkbox" class="form-check-input brand-input" id="Beats">
+                      <label for="Beats" class="text-muted">Beats</label>
+                    </div>
+                    <div>
+                      <img src="./assets/img/beats-pill.png" class="filter-icons" alt="Beats">
+                    </div>
+                  </div>
+                  <div class="d-flex mb-2 justify-content-between align-items-center">
+                    <div>
+                      <input type="checkbox" class="form-check-input brand-input" id="Nikon">
+                      <label for="Nikon" class="text-muted">Nikon</label>
+                    </div>
+                    <div>
+                      <img src="./assets/img/294645_nikon_icon.png" class="filter-icons" alt="Nikon">
+                    </div>
+                  </div>
+                  <div class="d-flex mb-2 justify-content-between align-items-center">
+                    <div>
+                      <input type="checkbox" class="form-check-input brand-input" id="Canon">
+                      <label for="Canon" class="text-muted">Canon</label>
+                    </div>
+                    <div>
+                      <img src="./assets/img/canon.png" class="filter-icons" alt="Canon">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="brand-section mb-5 pb-3 border-bottom">
+                <p class="mb-4">Type :</p>
+                <div class="brands-name">
+                  <div class="d-flex mb-2 justify-content-between align-items-center">
+                    <div>
+                      <input type="checkbox" class="form-check-input type-input" id="Camera">
+                      <label for="Camera" class="text-muted">Camera</label>
+                    </div>
+                    <div>
+                      <img src="./assets/img/photo-camera.png" class="filter-icons" alt="Camera">
+                    </div>
+                  </div>
+                  <div class="d-flex mb-2 justify-content-between align-items-center">
+                    <div>
+                      <input type="checkbox" class="form-check-input type-input" id="Phone">
+                      <label for="Phone" class="text-muted">Phone</label>
+                    </div>
+                    <div>
+                      <img src="./assets/img/iphone.png" class="filter-icons" alt="Phone">
+                    </div>
+                  </div>
+                  <div class="d-flex mb-2 justify-content-between align-items-center">
+                    <div>
+                      <input type="checkbox" class="form-check-input type-input" id="SmartWatch">
+                      <label for="SmartWatch" class="text-muted">SmartWatch</label>
+                    </div>
+                    <div>
+                      <img src="./assets/img/smartwatch.png" class="filter-icons" alt="SmartWatch">
+                    </div>
+                  </div>
+                  <div class="d-flex mb-2 justify-content-between align-items-center">
+                    <div>
+                      <input type="checkbox" class="form-check-input type-input" id="Headphone">
+                      <label for="Headphone" class="text-muted">Headphone</label>
+                    </div>
+                    <div>
+                      <img src="./assets/img/headphone.png" class="filter-icons" alt="Headphone">
+                    </div>
+                  </div>
+                  <div class="d-flex mb-2 justify-content-between align-items-center">
+                    <div>
+                      <input type="checkbox" class="form-check-input type-input" id="Headset">
+                      <label for="Headset" class="text-muted">Headset</label>
+                    </div>
+                    <div>
+                      <img src="./assets/img/customer-service-headset.png" class="filter-icons" alt="Headset">
+                    </div>
+                  </div>
+                  <div class="d-flex mb-2 justify-content-between align-items-center">
+                    <div>
+                      <input type="checkbox" class="form-check-input type-input" id="LapTop">
+                      <label for="LapTop" class="text-muted">LapTop</label>
+                    </div>
+                    <div>
+                      <img src="./assets/img/laptop.png" class="filter-icons" alt="LapTop">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="btn w-100 mb-3 py-2 btn-filter type-input">Apply Filter</button>
+            </div>
+          </div>
+        </aside>
+        <main class="col-12 col-lg-8">
+          <div class="row" id="main"></div>
+          <div class="pagination my-5 justify-content-center"></div>
+        </main>
+      </div>
+    </div>
+    <footer>
+      <div class="top-footer py-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-3 mb-4 mb-lg-0">
+              <img src="./assets/img/logo.png" class="d-block img-fluid mb-5 mx-auto mx-lg-0" alt="logo">
+              <div class="d-flex social-conteiner justify-content-center justify-content-lg-start">
+                <a href="#" class="socail-media text-muted py-1 px-2 bg-light rounded-circle me-1">
+                  <b class="bi bi-facebook fs-5"></b>
+                </a>
+                <a href="#" class="socail-media text-muted py-1 px-2 bg-light rounded-circle me-1">
+                  <b class="bi bi-twitter fs-5"></b>
+                </a>
+                <a href="#" class="socail-media text-muted py-1 px-2 bg-light rounded-circle me-1">
+                  <b class="bi bi-instagram fs-5"></b>
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-lg-3 text-center text-lg-start mb-4 mb-lg-0">
+              <h5 class="text-white mb-3">Useful Links</h5>
+              <ul class="navbar-nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link text-white fs-6 py-1">About</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link text-white fs-6 py-1">Partners</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link text-white fs-6 py-1">Contact</a></li>
+              </ul>
+            </div>
+            <div class="col-12 col-lg-3 text-center text-lg-start mb-4 mb-lg-0">
+              <h5 class="text-white mb-3">Help?</h5>
+              <ul class="navbar-nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link text-white fs-6 py-1">FAQ</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link text-white fs-6 py-1">Term & Conditi0on</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link text-white fs-6 py-1">Policy</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link text-white fs-6 py-1">Privacy</a></li>
+              </ul>
+            </div>
+            <div class="col-12 col-lg-3 text-center text-lg-start mb-4 mb-lg-0">
+              <h5 class="text-white mb-3">Address</h5>
+              <div class="flex-column d-flex">
+                <span class="d-block mb-2 py-1 fs-6 text-white">113-115 Old Brompton Road</span>
+                <span class="d-block mb-2 py-1 fs-6 text-white">SW7 3LE LONDON, UNITED KINGDOM</span>
+                <span class="d-block mb-2 py-1 fs-6 text-white">website :www.mordern.com</span>
+                <span class="d-block mb-2 py-1 fs-6 text-white">mobie</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-footer py-3">
+        <div class="container">
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="left-bottom__footer">
+              <small class="text-white">
+                © Copyright 2022, Digino.com
+              </small>
+            </div>
+            <div class="right-bottom__footer">
+              <small class="text-white">Terms & Condition    |   Privacy Policy</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
